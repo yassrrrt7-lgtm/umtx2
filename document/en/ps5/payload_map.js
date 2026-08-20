@@ -41,6 +41,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: "OnionHEN",
+        description: "OnionHEN Payload",
+        fileName: "OnionHEN.elf",
+        author: "Unknown",
+        projectSource: "",
+        binarySource: "",
+        version: "1.0",
+        toPort: 9021
+    },
+    {
         displayTitle: "ps5-kstuff",
         description: "FPKG enabler",
         fileName: "kstuff.elf",
