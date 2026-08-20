@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 1.0
+# Version 2.0
 
 CACHE:
 index.html
@@ -13,6 +13,12 @@ custom_host_stuff.js
 syscalls.js
 payload_map.js
 psfree/psfree.js
+psfree/mmap.js
+psfree/exploit.js
+psfree/gc.js
+psfree/utils.js
+psfree/int64.js
+offsets/5.50.js
 payloads/etaHEN-2.4B.bin
 payloads/OnionHEN.elf
 
