@@ -1,9 +1,9 @@
 import os
 from datetime import datetime
 
-PAYLOADS_DIR = 'payloads'
-MAP_FILE = 'payload_map.js'
-CACHE_FILE = 'cache.appcache'
+PAYLOADS_DIR = 'document/en/ps5/payloads'
+MAP_FILE = 'document/en/ps5/payload_map.js'
+CACHE_FILE = 'document/en/ps5/cache.appcache'
 
 def update():
     if not os.path.exists(PAYLOADS_DIR): return
