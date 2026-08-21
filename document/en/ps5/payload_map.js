@@ -196,4 +196,28 @@ const payload_map = [
         customAction: CUSTOM_ACTION_APPCACHE_REMOVE
     }
 
+    {
+        displayTitle: 'etaHEN6',
+        description: 'New Payload',
+        fileName: 'etaHEN6.elf',
+        author: 'Auto',
+        source: '',
+        version: '1.0'
+    },
+    {
+        displayTitle: 'PoorDS4rc38',
+        description: 'New Payload',
+        fileName: 'PoorDS4rc38.elf',
+        author: 'Auto',
+        source: '',
+        version: '1.0'
+    },
+    {
+        displayTitle: 'shadowmountplus8',
+        description: 'New Payload',
+        fileName: 'shadowmountplus8.elf',
+        author: 'Auto',
+        source: '',
+        version: '1.0'
+    },
 ];
