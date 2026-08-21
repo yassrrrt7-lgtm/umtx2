@@ -7,16 +7,14 @@ PAYLOADS_DIR = f'{BASE_DIR}/payloads'
 CACHE_FILE = f'{BASE_DIR}/cache.appcache'
 
 def update():
-    version_tag = datetime.now().strftime('%H:%M:%S')
-    
-    # 1. بناء ملف الأزرار مع خدعة الوقت لكسر كاش السيرفر
+    # 1. رجعنا الكود المثالي الصحيح (const) اللي السوني يقدر يقرأه
     if os.path.exists(PAYLOADS_DIR):
         files = [f for f in os.listdir(PAYLOADS_DIR) if f.endswith(('.bin', '.elf'))]
         
-        js_content = "window.payload_map = [\n"
+        js_content = "const payload_map = [\n"
         for i, p in enumerate(files):
             title = p.split('.')[0]
-            js_content += f"    {{\n        displayTitle: '{title}',\n        description: 'Updated {version_tag}',\n        fileName: '{p}',\n        author: 'Auto',\n        source: '',\n        version: '1.0'\n    }}"
+            js_content += f"    {{\n        displayTitle: '{title}',\n        description: 'Auto Added',\n        fileName: '{p}',\n        author: 'Auto',\n        source: '',\n        version: '1.0'\n    }}"
             if i < len(files) - 1:
                 js_content += ",\n"
             else:
@@ -26,7 +24,7 @@ def update():
         with open(MAP_FILE, 'w', encoding='utf-8') as f:
             f.write(js_content)
 
-    # 2. بناء ملف الكاش في نفس مسار السوني
+    # 2. بناء ملف الكاش في نفس مسار السوني مع تحديث الوقت
     if os.path.exists(BASE_DIR):
         manifest_lines = [
             "CACHE MANIFEST\n",
