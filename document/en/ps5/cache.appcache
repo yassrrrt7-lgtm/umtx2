@@ -1,15 +1,34 @@
 CACHE MANIFEST
-# Generated: 2026-08-21 07:41:22
+# Version 20260821_075519
 
 CACHE:
 index.html
+payload_map.js
+payloads/rp-get-pin.elf
+payloads/kstuff-toggle.elf
+payloads/elfldr-ps5.elf
+payloads/shsrv-ps5.elf
+payloads/websrv-ps5.elf
+payloads/etaHEN6.elf
+payloads/PoorDS4rc38.elf
+payloads/shadowmountplus8.elf
+payloads/OnionHEN.elf
+payloads/libhijacker-game-patch.v1.160.elf
+payloads/kstuff.elf
+payloads/ps5-versions.elf
+payloads/ps5debug_dizz.elf
+payloads/klogsrv-ps5.elf
+payloads/byepervisor.elf
+payloads/ftpsrv-ps5.elf
+payloads/etaHEN-2.4B.bin
+payloads/ps5debug_v1.0b5.elf
+payloads/gdbsrv-ps5.elf
 main.js
 syscalls.js
 rop.js
 custom_host_stuff.js
 main.css
 int64.js
-payload_map.js
 rop_slave.js
 umtx2.js
 offsets/5.50.js
@@ -41,25 +60,6 @@ offsets/4.03.js
 offsets/3.00.js
 offsets/2.20.js
 offsets/2.00.js
-payloads/rp-get-pin.elf
-payloads/kstuff-toggle.elf
-payloads/elfldr-ps5.elf
-payloads/shsrv-ps5.elf
-payloads/websrv-ps5.elf
-payloads/etaHEN6.elf
-payloads/PoorDS4rc38.elf
-payloads/shadowmountplus8.elf
-payloads/OnionHEN.elf
-payloads/libhijacker-game-patch.v1.160.elf
-payloads/kstuff.elf
-payloads/ps5-versions.elf
-payloads/ps5debug_dizz.elf
-payloads/klogsrv-ps5.elf
-payloads/byepervisor.elf
-payloads/ftpsrv-ps5.elf
-payloads/etaHEN-2.4B.bin
-payloads/ps5debug_v1.0b5.elf
-payloads/gdbsrv-ps5.elf
 psfree/COPYING
 psfree/psfree.js
 psfree/alert.js
