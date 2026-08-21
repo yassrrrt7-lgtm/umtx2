@@ -4,25 +4,27 @@ from datetime import datetime
 BASE_DIR = 'document/en/ps5'
 MAP_FILE = f'{BASE_DIR}/payload_map.js'
 PAYLOADS_DIR = f'{BASE_DIR}/payloads'
-CACHE_FILE = f'{BASE_DIR}/cache.appcache' # هنا السر: وضع الكاش جنب صفحة السوني مباشرة
+CACHE_FILE = f'{BASE_DIR}/cache.appcache'
 
 def update():
-    # 1. إضافة الأزرار
-    if os.path.exists(PAYLOADS_DIR) and os.path.exists(MAP_FILE):
+    # 1. بناء ملف الأزرار من الصفر لتجنب أي أخطاء برمجية (Syntax Errors)
+    if os.path.exists(PAYLOADS_DIR):
         files = [f for f in os.listdir(PAYLOADS_DIR) if f.endswith(('.bin', '.elf'))]
-        with open(MAP_FILE, 'r', encoding='utf-8') as f:
-            content = f.read()
-            
-        for p in files:
-            if p not in content:
-                title = p.split('.')[0]
-                btn = f"\n    {{\n        displayTitle: '{title}',\n        description: 'Auto Added',\n        fileName: '{p}',\n        author: 'Auto',\n        source: '',\n        version: '1.0'\n    }},"
-                content = content.replace('\n]', btn + '\n]')
-                
+        
+        js_content = "const payload_map = [\n"
+        for i, p in enumerate(files):
+            title = p.split('.')[0]
+            js_content += f"    {{\n        displayTitle: '{title}',\n        description: 'Auto Added',\n        fileName: '{p}',\n        author: 'Auto',\n        source: '',\n        version: '1.0'\n    }}"
+            if i < len(files) - 1:
+                js_content += ",\n"
+            else:
+                js_content += "\n"
+        js_content += "];\n"
+        
         with open(MAP_FILE, 'w', encoding='utf-8') as f:
-            f.write(content.replace(',,\n', ',\n'))
+            f.write(js_content)
 
-    # 2. بناء ملف الكاش في نفس مسار السوني بالضبط
+    # 2. بناء ملف الكاش في نفس مسار السوني (نفس الكود الناجح السابق)
     if os.path.exists(BASE_DIR):
         manifest_lines = [
             "CACHE MANIFEST\n",
@@ -32,13 +34,11 @@ def update():
             "payload_map.js\n"
         ]
         
-        # إضافة البايلودات
         if os.path.exists(PAYLOADS_DIR):
             for f in os.listdir(PAYLOADS_DIR):
                 if f.endswith(('.bin', '.elf')):
                     manifest_lines.append(f"payloads/{f}\n")
                     
-        # إضافة باقي ملفات الموقع
         for root, dirs, files in os.walk(BASE_DIR):
             for file in files:
                 if file in ['cache.appcache', 'index.html', 'payload_map.js'] or file.endswith(('.bin', '.elf')):
