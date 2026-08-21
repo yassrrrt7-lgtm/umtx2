@@ -1,7 +1,7 @@
-const payload_map = [
+window.payload_map = [
     {
         displayTitle: 'rp-get-pin',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'rp-get-pin.elf',
         author: 'Auto',
         source: '',
@@ -9,7 +9,7 @@ const payload_map = [
     },
     {
         displayTitle: 'kstuff-toggle',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'kstuff-toggle.elf',
         author: 'Auto',
         source: '',
@@ -17,7 +17,7 @@ const payload_map = [
     },
     {
         displayTitle: 'elfldr-ps5',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'elfldr-ps5.elf',
         author: 'Auto',
         source: '',
@@ -25,7 +25,7 @@ const payload_map = [
     },
     {
         displayTitle: 'shsrv-ps5',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'shsrv-ps5.elf',
         author: 'Auto',
         source: '',
@@ -33,7 +33,7 @@ const payload_map = [
     },
     {
         displayTitle: 'websrv-ps5',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'websrv-ps5.elf',
         author: 'Auto',
         source: '',
@@ -41,7 +41,7 @@ const payload_map = [
     },
     {
         displayTitle: 'etaHEN6',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'etaHEN6.elf',
         author: 'Auto',
         source: '',
@@ -49,7 +49,7 @@ const payload_map = [
     },
     {
         displayTitle: 'PoorDS4rc38',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'PoorDS4rc38.elf',
         author: 'Auto',
         source: '',
@@ -57,7 +57,7 @@ const payload_map = [
     },
     {
         displayTitle: 'shadowmountplus8',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'shadowmountplus8.elf',
         author: 'Auto',
         source: '',
@@ -65,7 +65,7 @@ const payload_map = [
     },
     {
         displayTitle: 'OnionHEN',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'OnionHEN.elf',
         author: 'Auto',
         source: '',
@@ -73,7 +73,7 @@ const payload_map = [
     },
     {
         displayTitle: 'libhijacker-game-patch',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'libhijacker-game-patch.v1.160.elf',
         author: 'Auto',
         source: '',
@@ -81,7 +81,7 @@ const payload_map = [
     },
     {
         displayTitle: 'kstuff',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'kstuff.elf',
         author: 'Auto',
         source: '',
@@ -89,7 +89,7 @@ const payload_map = [
     },
     {
         displayTitle: 'ps5-versions',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'ps5-versions.elf',
         author: 'Auto',
         source: '',
@@ -97,7 +97,7 @@ const payload_map = [
     },
     {
         displayTitle: 'ps5debug_dizz',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'ps5debug_dizz.elf',
         author: 'Auto',
         source: '',
@@ -105,7 +105,7 @@ const payload_map = [
     },
     {
         displayTitle: 'klogsrv-ps5',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'klogsrv-ps5.elf',
         author: 'Auto',
         source: '',
@@ -113,7 +113,7 @@ const payload_map = [
     },
     {
         displayTitle: 'byepervisor',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'byepervisor.elf',
         author: 'Auto',
         source: '',
@@ -121,7 +121,7 @@ const payload_map = [
     },
     {
         displayTitle: 'ftpsrv-ps5',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'ftpsrv-ps5.elf',
         author: 'Auto',
         source: '',
@@ -129,7 +129,7 @@ const payload_map = [
     },
     {
         displayTitle: 'etaHEN-2',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'etaHEN-2.4B.bin',
         author: 'Auto',
         source: '',
@@ -137,7 +137,7 @@ const payload_map = [
     },
     {
         displayTitle: 'ps5debug_v1',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'ps5debug_v1.0b5.elf',
         author: 'Auto',
         source: '',
@@ -145,7 +145,7 @@ const payload_map = [
     },
     {
         displayTitle: 'gdbsrv-ps5',
-        description: 'Auto Added',
+        description: 'Updated 08:43:08',
         fileName: 'gdbsrv-ps5.elf',
         author: 'Auto',
         source: '',
