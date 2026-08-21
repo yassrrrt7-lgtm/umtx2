@@ -1,9 +1,10 @@
 import os
 from datetime import datetime
 
-MAP_FILE = 'document/en/ps5/payload_map.js'
-PAYLOADS_DIR = 'document/en/ps5/payloads'
-CACHE_FILE = 'cache.appcache'  # بناء الكاش في الواجهة الرئيسية
+BASE_DIR = 'document/en/ps5'
+CACHE_FILE = f'{BASE_DIR}/cache.appcache'
+MAP_FILE = f'{BASE_DIR}/payload_map.js'
+PAYLOADS_DIR = f'{BASE_DIR}/payloads'
 
 def update():
     # 1. إضافة الأزرار
@@ -21,26 +22,24 @@ def update():
         with open(MAP_FILE, 'w', encoding='utf-8') as f:
             f.write(content)
 
-    # 2. بناء كاش شامل لكل ملفات الموقع من الخارج للداخل
+    # 2. بناء الكاش الداخلي
+    if not os.path.exists(BASE_DIR):
+        return
+
     manifest_lines = [
         "CACHE MANIFEST\n",
         f"# Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n",
         "CACHE:\n"
     ]
     
-    for root, dirs, files in os.walk('.'):
-        if '.git' in root or '.github' in root:
-            continue
+    for root, dirs, files in os.walk(BASE_DIR):
         for file in files:
-            # استثناء الملفات غير المطلوبة
-            if file == 'cache.appcache' or file.startswith('.') or file.endswith(('.yml', '.py')):
+            if file == 'cache.appcache' or file.startswith('.'):
                 continue
-            
             full_path = os.path.join(root, file)
-            rel_path = full_path.replace('\\', '/').replace('./', '')
-            
-            if rel_path:
-                manifest_lines.append(f"{rel_path}\n")
+            rel_path = os.path.relpath(full_path, BASE_DIR)
+            rel_path = rel_path.replace('\\', '/')
+            manifest_lines.append(f"{rel_path}\n")
             
     manifest_lines.append("\nNETWORK:\n*\n")
     
