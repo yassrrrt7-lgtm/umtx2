@@ -7,24 +7,45 @@ PAYLOADS_DIR = f'{BASE_DIR}/payloads'
 CACHE_FILE = f'{BASE_DIR}/cache.appcache'
 
 def update():
-    # 1. رجعنا الكود المثالي الصحيح (const) اللي السوني يقدر يقرأه
+    # 1. بناء ملف الأزرار بنفس هيكل الكود الأصلي (عشان الشاشة ما تطلع فاضية)
     if os.path.exists(PAYLOADS_DIR):
         files = [f for f in os.listdir(PAYLOADS_DIR) if f.endswith(('.bin', '.elf'))]
         
-        js_content = "const payload_map = [\n"
-        for i, p in enumerate(files):
+        # إضافة السطر السري اللي يمنع انهيار الشاشة
+        js_content = "// @ts-check\n\n"
+        js_content += 'const CUSTOM_ACTION_APPCACHE_REMOVE = "appcache-remove";\n\n'
+        js_content += "const payload_map = [\n"
+        
+        for p in files:
             title = p.split('.')[0]
-            js_content += f"    {{\n        displayTitle: '{title}',\n        description: 'Auto Added',\n        fileName: '{p}',\n        author: 'Auto',\n        source: '',\n        version: '1.0'\n    }}"
-            if i < len(files) - 1:
-                js_content += ",\n"
-            else:
-                js_content += "\n"
-        js_content += "];\n"
+            js_content += f"""    {{
+        displayTitle: '{title}',
+        description: 'Auto Added',
+        fileName: '{p}',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    }},\n"""
+        
+        # إضافة زر تنظيف الكاش الأصلي في النهاية
+        js_content += """    {
+        displayTitle: "Browser appcache remover",
+        description: "Deletes for only the current user in webkit-only mode",
+        fileName: "",
+        author: "Storm21CH, idlesauce",
+        projectSource: "",
+        binarySource: "",
+        version: "1.0",
+        customAction: CUSTOM_ACTION_APPCACHE_REMOVE
+    }
+];\n"""
         
         with open(MAP_FILE, 'w', encoding='utf-8') as f:
             f.write(js_content)
 
-    # 2. بناء ملف الكاش في نفس مسار السوني مع تحديث الوقت
+    # 2. بناء ملف الكاش في نفس مسار السوني
     if os.path.exists(BASE_DIR):
         manifest_lines = [
             "CACHE MANIFEST\n",
