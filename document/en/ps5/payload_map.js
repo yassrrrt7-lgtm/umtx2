@@ -34,6 +34,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'ps5-backpork',
+        description: 'Auto Added',
+        fileName: 'ps5-backpork.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: 'shsrv-ps5',
         description: 'Auto Added',
         fileName: 'shsrv-ps5.elf',
