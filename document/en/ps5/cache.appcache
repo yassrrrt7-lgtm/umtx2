@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 20260930_075055
+# Version 20260930_080047
 
 CACHE:
 index.html
@@ -22,6 +22,7 @@ payloads/kstuff-1.13-fpkg-dr-test4.elf
 payloads/OnionHEN13.elf
 payloads/klogsrv-ps5.elf
 payloads/rp-get-pin.elf
+payloads/PoorDS4rc51.elf
 payloads/etaHEN6.elf
 payloads/gdbsrv-ps5.elf
 payloads/etaHEN-2.4B.bin

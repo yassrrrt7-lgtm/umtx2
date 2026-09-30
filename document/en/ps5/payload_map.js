@@ -184,6 +184,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'PoorDS4rc51',
+        description: 'Auto Added',
+        fileName: 'PoorDS4rc51.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: 'etaHEN6',
         description: 'Auto Added',
         fileName: 'etaHEN6.elf',
