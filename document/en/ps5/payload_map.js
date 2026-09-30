@@ -224,6 +224,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'kstufffpkgtest4',
+        description: 'Auto Added',
+        fileName: 'kstufffpkgtest4.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: "Browser appcache remover",
         description: "Deletes for only the current user in webkit-only mode",
         fileName: "",

@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 20260930_071927
+# Version 20260930_075055
 
 CACHE:
 index.html
@@ -26,6 +26,7 @@ payloads/etaHEN6.elf
 payloads/gdbsrv-ps5.elf
 payloads/etaHEN-2.4B.bin
 payloads/websrv-ps5.elf
+payloads/kstufffpkgtest4.elf
 umtx2.js
 int64.js
 main.js
