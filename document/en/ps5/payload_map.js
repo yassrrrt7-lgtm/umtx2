@@ -14,6 +14,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'shadowmountpluspkg',
+        description: 'Auto Added',
+        fileName: 'shadowmountpluspkg.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: 'byepervisor',
         description: 'Auto Added',
         fileName: 'byepervisor.elf',
@@ -94,6 +104,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'kstuffpkg',
+        description: 'Auto Added',
+        fileName: 'kstuffpkg.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: 'elfldr-ps5',
         description: 'Auto Added',
         fileName: 'elfldr-ps5.elf',
@@ -157,6 +177,16 @@ const payload_map = [
         displayTitle: 'OnionHEN13',
         description: 'Auto Added',
         fileName: 'OnionHEN13.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
+        displayTitle: 'a53pkg',
+        description: 'Auto Added',
+        fileName: 'a53pkg.elf',
         author: 'Auto',
         projectSource: '',
         binarySource: '',

@@ -1,10 +1,11 @@
 CACHE MANIFEST
-# Version 20260930_080047
+# Version 20260930_083723
 
 CACHE:
 index.html
 payload_map.js
 payloads/shsrv-ps5.elf
+payloads/shadowmountpluspkg.elf
 payloads/byepervisor.elf
 payloads/ps5debug_dizz.elf
 payloads/kstuff.elf
@@ -13,6 +14,7 @@ payloads/libhijacker-game-patch.v1.160.elf
 payloads/shadowmountplus8.elf
 payloads/kstuff-toggle.elf
 payloads/ps5debug_v1.0b5.elf
+payloads/kstuffpkg.elf
 payloads/elfldr-ps5.elf
 payloads/ftpsrv-ps5.elf
 payloads/ps5-versions.elf
@@ -20,6 +22,7 @@ payloads/ps5-backpork.elf
 payloads/PoorDS4rc38.elf
 payloads/kstuff-1.13-fpkg-dr-test4.elf
 payloads/OnionHEN13.elf
+payloads/a53pkg.elf
 payloads/klogsrv-ps5.elf
 payloads/rp-get-pin.elf
 payloads/PoorDS4rc51.elf
