@@ -104,6 +104,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'HyperHEN-v0',
+        description: 'Auto Added',
+        fileName: 'HyperHEN-v0.9.2.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: 'kstuffpkg',
         description: 'Auto Added',
         fileName: 'kstuffpkg.elf',

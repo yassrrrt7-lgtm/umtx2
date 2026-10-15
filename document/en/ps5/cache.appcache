@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 20260930_083723
+# Version 20261015_054632
 
 CACHE:
 index.html
@@ -14,6 +14,7 @@ payloads/libhijacker-game-patch.v1.160.elf
 payloads/shadowmountplus8.elf
 payloads/kstuff-toggle.elf
 payloads/ps5debug_v1.0b5.elf
+payloads/HyperHEN-v0.9.2.elf
 payloads/kstuffpkg.elf
 payloads/elfldr-ps5.elf
 payloads/ftpsrv-ps5.elf
