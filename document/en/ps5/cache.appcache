@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 20261126_050647
+# Version 20261126_172013
 
 CACHE:
 index.html
@@ -8,6 +8,7 @@ payloads/rp-get-pin.elf
 payloads/ps5_bridge.elf
 payloads/shadowmountpluspkg.elf
 payloads/ps5_bridgezzz.elf
+payloads/arabi_afr_poc.elf
 payloads/ps5-versions.elf
 payloads/etaHEN-2.4B.bin
 payloads/shsrv-ps5.elf
@@ -20,6 +21,7 @@ payloads/OnionHEN13.elf
 payloads/kstuffpkg.elf
 payloads/ps5-backpork.elf
 payloads/kstuff-1.13-fpkg-dr-test4.elf
+payloads/arabi_scanner_poc.elf
 payloads/byepervisor.elf
 payloads/ps5-account-tools-v1.2.elf
 payloads/websrv-ps5.elf

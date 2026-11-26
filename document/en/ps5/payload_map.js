@@ -44,6 +44,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'arabi_afr_poc',
+        description: 'Auto Added',
+        fileName: 'arabi_afr_poc.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: 'ps5-versions',
         description: 'Auto Added',
         fileName: 'ps5-versions.elf',
@@ -157,6 +167,16 @@ const payload_map = [
         displayTitle: 'kstuff-1',
         description: 'Auto Added',
         fileName: 'kstuff-1.13-fpkg-dr-test4.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
+        displayTitle: 'arabi_scanner_poc',
+        description: 'Auto Added',
+        fileName: 'arabi_scanner_poc.elf',
         author: 'Auto',
         projectSource: '',
         binarySource: '',
