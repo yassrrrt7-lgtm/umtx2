@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 20261125_105149
+# Version 20261126_050647
 
 CACHE:
 index.html
@@ -21,6 +21,7 @@ payloads/kstuffpkg.elf
 payloads/ps5-backpork.elf
 payloads/kstuff-1.13-fpkg-dr-test4.elf
 payloads/byepervisor.elf
+payloads/ps5-account-tools-v1.2.elf
 payloads/websrv-ps5.elf
 payloads/HyperHEN-v0.9.2.elf
 payloads/OnionHEN.elf

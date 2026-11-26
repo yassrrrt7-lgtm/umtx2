@@ -174,6 +174,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'ps5-account-tools-v1',
+        description: 'Auto Added',
+        fileName: 'ps5-account-tools-v1.2.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: 'websrv-ps5',
         description: 'Auto Added',
         fileName: 'websrv-ps5.elf',
