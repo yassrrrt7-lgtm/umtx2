@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 20261127_050549
+# Version 20261127_054437
 
 CACHE:
 index.html
@@ -9,6 +9,7 @@ payloads/ps5_bridge.elf
 payloads/shadowmountpluspkg.elf
 payloads/ps5_bridgezzz.elf
 payloads/arabi_afr_poc.elf
+payloads/shadowmountplus12.elf
 payloads/ps5-versions.elf
 payloads/etaHEN-2.4B.bin
 payloads/shsrv-ps5.elf

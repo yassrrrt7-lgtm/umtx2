@@ -54,6 +54,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'shadowmountplus12',
+        description: 'Auto Added',
+        fileName: 'shadowmountplus12.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: 'ps5-versions',
         description: 'Auto Added',
         fileName: 'ps5-versions.elf',
