@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 20261127_043020
+# Version 20261127_044721
 
 CACHE:
 index.html
@@ -16,6 +16,7 @@ payloads/kstuff.elf
 payloads/elfldr-ps5.elf
 payloads/ftpsrv-ps5.elf
 payloads/arabi_scanner_poc2.elf
+payloads/arabi_scanner_poc3.elf
 payloads/ps5debug_dizz.elf
 payloads/ps5_bridgewww.elf
 payloads/OnionHEN13.elf
