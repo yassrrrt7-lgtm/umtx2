@@ -84,6 +84,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'arabi_scanner_poc4',
+        description: 'Auto Added',
+        fileName: 'arabi_scanner_poc4.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: 'kstuff',
         description: 'Auto Added',
         fileName: 'kstuff.elf',
