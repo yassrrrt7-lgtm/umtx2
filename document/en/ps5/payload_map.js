@@ -64,6 +64,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'arabi_hub5',
+        description: 'Auto Added',
+        fileName: 'arabi_hub5.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: 'arabi_hub4',
         description: 'Auto Added',
         fileName: 'arabi_hub4.elf',
