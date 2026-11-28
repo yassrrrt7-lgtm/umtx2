@@ -294,6 +294,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: 'arabi_hub3',
+        description: 'Auto Added',
+        fileName: 'arabi_hub3.elf',
+        author: 'Auto',
+        projectSource: '',
+        binarySource: '',
+        version: '1.0',
+        toPort: 9021
+    },
+    {
         displayTitle: 'kstuff-toggle',
         description: 'Auto Added',
         fileName: 'kstuff-toggle.elf',

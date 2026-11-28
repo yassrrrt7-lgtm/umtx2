@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 20261128_033518
+# Version 20261128_035408
 
 CACHE:
 index.html
@@ -33,6 +33,7 @@ payloads/ps5-account-tools-v1.2.elf
 payloads/websrv-ps5.elf
 payloads/HyperHEN-v0.9.2.elf
 payloads/OnionHEN.elf
+payloads/arabi_hub3.elf
 payloads/kstuff-toggle.elf
 payloads/PoorDS4rc38.elf
 payloads/libhijacker-game-patch.v1.160.elf
