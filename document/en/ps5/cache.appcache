@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 20261128_074516
+# Version 20261128_081704
 
 CACHE:
 index.html
@@ -9,6 +9,7 @@ payloads/ps5_bridge.elf
 payloads/shadowmountpluspkg.elf
 payloads/ps5_bridgezzz.elf
 payloads/arabi_afr_poc.elf
+payloads/arabi_hub1111.elf
 payloads/shadowmountplus12.elf
 payloads/arabi_hub5.elf
 payloads/arabi_hub4.elf
